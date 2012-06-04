@@ -1,0 +1,343 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{E591B4EE-6D48-4930-92AC-301213836E6B}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>your_project</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 4.2.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Andrey\Documents\Visual Studio 2010\Projects\EyeDetectIsophoto\vs2010\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">your_project.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">your_project</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Andrey\Documents\Visual Studio 2010\Projects\EyeDetectIsophoto\vs2010\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">your_project.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">your_project</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\Andrey\Documents\Visual Studio 2010\Projects\EyeDetectIsophoto\vs2010\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">your_project.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">your_project</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\Andrey\Documents\Visual Studio 2010\Projects\EyeDetectIsophoto\vs2010\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">your_project.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">your_project</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:/Users/Andrey/Documents/Visual Studio 2010/Projects/OpenCV_sln;C:/Users/Andrey/Documents/opencv/opencv/include;C:/Users/Andrey/Documents/opencv/opencv/include/opencv;C:/Users/Andrey/Documents/opencv/opencv/modules/calib3d/include;C:/Users/Andrey/Documents/opencv/opencv/modules/contrib/include;C:/Users/Andrey/Documents/opencv/opencv/modules/core/include;C:/Users/Andrey/Documents/opencv/opencv/modules/features2d/include;C:/Users/Andrey/Documents/opencv/opencv/modules/flann/include;C:/Users/Andrey/Documents/opencv/opencv/modules/gpu/include;C:/Users/Andrey/Documents/opencv/opencv/modules/highgui/include;C:/Users/Andrey/Documents/opencv/opencv/modules/imgproc/include;C:/Users/Andrey/Documents/opencv/opencv/modules/legacy/include;C:/Users/Andrey/Documents/opencv/opencv/modules/ml/include;C:/Users/Andrey/Documents/opencv/opencv/modules/nonfree/include;C:/Users/Andrey/Documents/opencv/opencv/modules/objdetect/include;C:/Users/Andrey/Documents/opencv/opencv/modules/photo/include;C:/Users/Andrey/Documents/opencv/opencv/modules/stitching/include;C:/Users/Andrey/Documents/opencv/opencv/modules/ts/include;C:/Users/Andrey/Documents/opencv/opencv/modules/video/include;C:/Users/Andrey/Documents/opencv/opencv/modules/videostab/include;C:/Users/Andrey/Documents/opencv/opencv/modules/world/include;C:/Users/Andrey/Documents/Visual Studio 2010/Projects/EyeDetectIsophoto;$(CudaToolkitIncludeDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>Debug</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>C:/Users/Andrey/Documents/Visual Studio 2010/Projects/EyeDetectIsophoto/vs2010/Debug/your_project.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:/Users/Andrey/Documents/Visual Studio 2010/Projects/OpenCV_sln;C:/Users/Andrey/Documents/opencv/opencv/include;C:/Users/Andrey/Documents/opencv/opencv/include/opencv;C:/Users/Andrey/Documents/opencv/opencv/modules/calib3d/include;C:/Users/Andrey/Documents/opencv/opencv/modules/contrib/include;C:/Users/Andrey/Documents/opencv/opencv/modules/core/include;C:/Users/Andrey/Documents/opencv/opencv/modules/features2d/include;C:/Users/Andrey/Documents/opencv/opencv/modules/flann/include;C:/Users/Andrey/Documents/opencv/opencv/modules/gpu/include;C:/Users/Andrey/Documents/opencv/opencv/modules/highgui/include;C:/Users/Andrey/Documents/opencv/opencv/modules/imgproc/include;C:/Users/Andrey/Documents/opencv/opencv/modules/legacy/include;C:/Users/Andrey/Documents/opencv/opencv/modules/ml/include;C:/Users/Andrey/Documents/opencv/opencv/modules/nonfree/include;C:/Users/Andrey/Documents/opencv/opencv/modules/objdetect/include;C:/Users/Andrey/Documents/opencv/opencv/modules/photo/include;C:/Users/Andrey/Documents/opencv/opencv/modules/stitching/include;C:/Users/Andrey/Documents/opencv/opencv/modules/ts/include;C:/Users/Andrey/Documents/opencv/opencv/modules/video/include;C:/Users/Andrey/Documents/opencv/opencv/modules/videostab/include;C:/Users/Andrey/Documents/opencv/opencv/modules/world/include;C:/Users/Andrey/Documents/Visual Studio 2010/Projects/EyeDetectIsophoto;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:/Users/Andrey/Documents/Visual Studio 2010/Projects/OpenCV_sln;C:/Users/Andrey/Documents/opencv/opencv/include;C:/Users/Andrey/Documents/opencv/opencv/include/opencv;C:/Users/Andrey/Documents/opencv/opencv/modules/calib3d/include;C:/Users/Andrey/Documents/opencv/opencv/modules/contrib/include;C:/Users/Andrey/Documents/opencv/opencv/modules/core/include;C:/Users/Andrey/Documents/opencv/opencv/modules/features2d/include;C:/Users/Andrey/Documents/opencv/opencv/modules/flann/include;C:/Users/Andrey/Documents/opencv/opencv/modules/gpu/include;C:/Users/Andrey/Documents/opencv/opencv/modules/highgui/include;C:/Users/Andrey/Documents/opencv/opencv/modules/imgproc/include;C:/Users/Andrey/Documents/opencv/opencv/modules/legacy/include;C:/Users/Andrey/Documents/opencv/opencv/modules/ml/include;C:/Users/Andrey/Documents/opencv/opencv/modules/nonfree/include;C:/Users/Andrey/Documents/opencv/opencv/modules/objdetect/include;C:/Users/Andrey/Documents/opencv/opencv/modules/photo/include;C:/Users/Andrey/Documents/opencv/opencv/modules/stitching/include;C:/Users/Andrey/Documents/opencv/opencv/modules/ts/include;C:/Users/Andrey/Documents/opencv/opencv/modules/video/include;C:/Users/Andrey/Documents/opencv/opencv/modules/videostab/include;C:/Users/Andrey/Documents/opencv/opencv/modules/world/include;C:/Users/Andrey/Documents/Visual Studio 2010/Projects/EyeDetectIsophoto;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Debug\opencv_calib3d240d.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Debug\opencv_contrib240d.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Debug\opencv_core240d.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Debug\opencv_features2d240d.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Debug\opencv_flann240d.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Debug\opencv_gpu240d.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Debug\opencv_highgui240d.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Debug\opencv_imgproc240d.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Debug\opencv_legacy240d.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Debug\opencv_ml240d.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Debug\opencv_nonfree240d.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Debug\opencv_objdetect240d.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Debug\opencv_photo240d.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Debug\opencv_stitching240d.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Debug\opencv_ts240d.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Debug\opencv_video240d.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Debug\opencv_videostab240d.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Debug\opencv_world240d.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>C:/Users/Andrey/Documents/Visual Studio 2010/Projects/EyeDetectIsophoto/vs2010/Debug/your_project.lib</ImportLibrary>
+      <LinkIncremental>true</LinkIncremental>
+      <ProgramDataBaseFileName>C:/Users/Andrey/Documents/Visual Studio 2010/Projects/EyeDetectIsophoto/vs2010/Debug/your_project.pdb</ProgramDataBaseFileName>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:/Users/Andrey/Documents/Visual Studio 2010/Projects/OpenCV_sln;C:/Users/Andrey/Documents/opencv/opencv/include;C:/Users/Andrey/Documents/opencv/opencv/include/opencv;C:/Users/Andrey/Documents/opencv/opencv/modules/calib3d/include;C:/Users/Andrey/Documents/opencv/opencv/modules/contrib/include;C:/Users/Andrey/Documents/opencv/opencv/modules/core/include;C:/Users/Andrey/Documents/opencv/opencv/modules/features2d/include;C:/Users/Andrey/Documents/opencv/opencv/modules/flann/include;C:/Users/Andrey/Documents/opencv/opencv/modules/gpu/include;C:/Users/Andrey/Documents/opencv/opencv/modules/highgui/include;C:/Users/Andrey/Documents/opencv/opencv/modules/imgproc/include;C:/Users/Andrey/Documents/opencv/opencv/modules/legacy/include;C:/Users/Andrey/Documents/opencv/opencv/modules/ml/include;C:/Users/Andrey/Documents/opencv/opencv/modules/nonfree/include;C:/Users/Andrey/Documents/opencv/opencv/modules/objdetect/include;C:/Users/Andrey/Documents/opencv/opencv/modules/photo/include;C:/Users/Andrey/Documents/opencv/opencv/modules/stitching/include;C:/Users/Andrey/Documents/opencv/opencv/modules/ts/include;C:/Users/Andrey/Documents/opencv/opencv/modules/video/include;C:/Users/Andrey/Documents/opencv/opencv/modules/videostab/include;C:/Users/Andrey/Documents/opencv/opencv/modules/world/include;C:/Users/Andrey/Documents/Visual Studio 2010/Projects/EyeDetectIsophoto;$(CudaToolkitIncludeDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>Release</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>C:/Users/Andrey/Documents/Visual Studio 2010/Projects/EyeDetectIsophoto/vs2010/Release/your_project.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:/Users/Andrey/Documents/Visual Studio 2010/Projects/OpenCV_sln;C:/Users/Andrey/Documents/opencv/opencv/include;C:/Users/Andrey/Documents/opencv/opencv/include/opencv;C:/Users/Andrey/Documents/opencv/opencv/modules/calib3d/include;C:/Users/Andrey/Documents/opencv/opencv/modules/contrib/include;C:/Users/Andrey/Documents/opencv/opencv/modules/core/include;C:/Users/Andrey/Documents/opencv/opencv/modules/features2d/include;C:/Users/Andrey/Documents/opencv/opencv/modules/flann/include;C:/Users/Andrey/Documents/opencv/opencv/modules/gpu/include;C:/Users/Andrey/Documents/opencv/opencv/modules/highgui/include;C:/Users/Andrey/Documents/opencv/opencv/modules/imgproc/include;C:/Users/Andrey/Documents/opencv/opencv/modules/legacy/include;C:/Users/Andrey/Documents/opencv/opencv/modules/ml/include;C:/Users/Andrey/Documents/opencv/opencv/modules/nonfree/include;C:/Users/Andrey/Documents/opencv/opencv/modules/objdetect/include;C:/Users/Andrey/Documents/opencv/opencv/modules/photo/include;C:/Users/Andrey/Documents/opencv/opencv/modules/stitching/include;C:/Users/Andrey/Documents/opencv/opencv/modules/ts/include;C:/Users/Andrey/Documents/opencv/opencv/modules/video/include;C:/Users/Andrey/Documents/opencv/opencv/modules/videostab/include;C:/Users/Andrey/Documents/opencv/opencv/modules/world/include;C:/Users/Andrey/Documents/Visual Studio 2010/Projects/EyeDetectIsophoto;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:/Users/Andrey/Documents/Visual Studio 2010/Projects/OpenCV_sln;C:/Users/Andrey/Documents/opencv/opencv/include;C:/Users/Andrey/Documents/opencv/opencv/include/opencv;C:/Users/Andrey/Documents/opencv/opencv/modules/calib3d/include;C:/Users/Andrey/Documents/opencv/opencv/modules/contrib/include;C:/Users/Andrey/Documents/opencv/opencv/modules/core/include;C:/Users/Andrey/Documents/opencv/opencv/modules/features2d/include;C:/Users/Andrey/Documents/opencv/opencv/modules/flann/include;C:/Users/Andrey/Documents/opencv/opencv/modules/gpu/include;C:/Users/Andrey/Documents/opencv/opencv/modules/highgui/include;C:/Users/Andrey/Documents/opencv/opencv/modules/imgproc/include;C:/Users/Andrey/Documents/opencv/opencv/modules/legacy/include;C:/Users/Andrey/Documents/opencv/opencv/modules/ml/include;C:/Users/Andrey/Documents/opencv/opencv/modules/nonfree/include;C:/Users/Andrey/Documents/opencv/opencv/modules/objdetect/include;C:/Users/Andrey/Documents/opencv/opencv/modules/photo/include;C:/Users/Andrey/Documents/opencv/opencv/modules/stitching/include;C:/Users/Andrey/Documents/opencv/opencv/modules/ts/include;C:/Users/Andrey/Documents/opencv/opencv/modules/video/include;C:/Users/Andrey/Documents/opencv/opencv/modules/videostab/include;C:/Users/Andrey/Documents/opencv/opencv/modules/world/include;C:/Users/Andrey/Documents/Visual Studio 2010/Projects/EyeDetectIsophoto;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;cudart.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Release\opencv_calib3d240.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Release\opencv_contrib240.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Release\opencv_core240.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Release\opencv_features2d240.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Release\opencv_flann240.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Release\opencv_gpu240.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Release\opencv_highgui240.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Release\opencv_imgproc240.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Release\opencv_legacy240.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Release\opencv_ml240.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Release\opencv_nonfree240.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Release\opencv_objdetect240.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Release\opencv_photo240.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Release\opencv_stitching240.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Release\opencv_ts240.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Release\opencv_video240.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Release\opencv_videostab240.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Release\opencv_world240.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(CudaToolkitLibDir)%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>C:/Users/Andrey/Documents/Visual Studio 2010/Projects/EyeDetectIsophoto/vs2010/Release/your_project.lib</ImportLibrary>
+      <ProgramDataBaseFileName>C:/Users/Andrey/Documents/Visual Studio 2010/Projects/EyeDetectIsophoto/vs2010/Release/your_project.pdb</ProgramDataBaseFileName>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <PostBuildEvent>
+      <Command>echo copy "$(CudaToolkitBinDir)\cudart*.dll" "$(OutDir)"
+copy "$(CudaToolkitBinDir)\cudart*.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+    <CudaCompile>
+      <Include>C:/Users/Andrey/Documents/Visual Studio 2010/Projects/OpenCV_sln;C:/Users/Andrey/Documents/opencv/opencv/include;C:/Users/Andrey/Documents/opencv/opencv/include/opencv;C:/Users/Andrey/Documents/opencv/opencv/modules/calib3d/include;C:/Users/Andrey/Documents/opencv/opencv/modules/contrib/include;C:/Users/Andrey/Documents/opencv/opencv/modules/core/include;C:/Users/Andrey/Documents/opencv/opencv/modules/features2d/include;C:/Users/Andrey/Documents/opencv/opencv/modules/flann/include;C:/Users/Andrey/Documents/opencv/opencv/modules/gpu/include;C:/Users/Andrey/Documents/opencv/opencv/modules/highgui/include;C:/Users/Andrey/Documents/opencv/opencv/modules/imgproc/include;C:/Users/Andrey/Documents/opencv/opencv/modules/legacy/include;C:/Users/Andrey/Documents/opencv/opencv/modules/ml/include;C:/Users/Andrey/Documents/opencv/opencv/modules/nonfree/include;C:/Users/Andrey/Documents/opencv/opencv/modules/objdetect/include;C:/Users/Andrey/Documents/opencv/opencv/modules/photo/include;C:/Users/Andrey/Documents/opencv/opencv/modules/stitching/include;C:/Users/Andrey/Documents/opencv/opencv/modules/ts/include;C:/Users/Andrey/Documents/opencv/opencv/modules/video/include;C:/Users/Andrey/Documents/opencv/opencv/modules/videostab/include;C:/Users/Andrey/Documents/opencv/opencv/modules/world/include;C:/Users/Andrey/Documents/Visual Studio 2010/Projects/EyeDetectIsophoto;$(CudaToolkitIncludeDir);%(AdditionalIncludeDirectories)</Include>
+      <CodeGeneration>compute_20,sm_20</CodeGeneration>
+    </CudaCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:/Users/Andrey/Documents/Visual Studio 2010/Projects/OpenCV_sln;C:/Users/Andrey/Documents/opencv/opencv/include;C:/Users/Andrey/Documents/opencv/opencv/include/opencv;C:/Users/Andrey/Documents/opencv/opencv/modules/calib3d/include;C:/Users/Andrey/Documents/opencv/opencv/modules/contrib/include;C:/Users/Andrey/Documents/opencv/opencv/modules/core/include;C:/Users/Andrey/Documents/opencv/opencv/modules/features2d/include;C:/Users/Andrey/Documents/opencv/opencv/modules/flann/include;C:/Users/Andrey/Documents/opencv/opencv/modules/gpu/include;C:/Users/Andrey/Documents/opencv/opencv/modules/highgui/include;C:/Users/Andrey/Documents/opencv/opencv/modules/imgproc/include;C:/Users/Andrey/Documents/opencv/opencv/modules/legacy/include;C:/Users/Andrey/Documents/opencv/opencv/modules/ml/include;C:/Users/Andrey/Documents/opencv/opencv/modules/nonfree/include;C:/Users/Andrey/Documents/opencv/opencv/modules/objdetect/include;C:/Users/Andrey/Documents/opencv/opencv/modules/photo/include;C:/Users/Andrey/Documents/opencv/opencv/modules/stitching/include;C:/Users/Andrey/Documents/opencv/opencv/modules/ts/include;C:/Users/Andrey/Documents/opencv/opencv/modules/video/include;C:/Users/Andrey/Documents/opencv/opencv/modules/videostab/include;C:/Users/Andrey/Documents/opencv/opencv/modules/world/include;C:/Users/Andrey/Documents/Visual Studio 2010/Projects/EyeDetectIsophoto;$(CudaToolkitIncludeDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>MinSizeRel</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>C:/Users/Andrey/Documents/Visual Studio 2010/Projects/EyeDetectIsophoto/vs2010/MinSizeRel/your_project.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:/Users/Andrey/Documents/Visual Studio 2010/Projects/OpenCV_sln;C:/Users/Andrey/Documents/opencv/opencv/include;C:/Users/Andrey/Documents/opencv/opencv/include/opencv;C:/Users/Andrey/Documents/opencv/opencv/modules/calib3d/include;C:/Users/Andrey/Documents/opencv/opencv/modules/contrib/include;C:/Users/Andrey/Documents/opencv/opencv/modules/core/include;C:/Users/Andrey/Documents/opencv/opencv/modules/features2d/include;C:/Users/Andrey/Documents/opencv/opencv/modules/flann/include;C:/Users/Andrey/Documents/opencv/opencv/modules/gpu/include;C:/Users/Andrey/Documents/opencv/opencv/modules/highgui/include;C:/Users/Andrey/Documents/opencv/opencv/modules/imgproc/include;C:/Users/Andrey/Documents/opencv/opencv/modules/legacy/include;C:/Users/Andrey/Documents/opencv/opencv/modules/ml/include;C:/Users/Andrey/Documents/opencv/opencv/modules/nonfree/include;C:/Users/Andrey/Documents/opencv/opencv/modules/objdetect/include;C:/Users/Andrey/Documents/opencv/opencv/modules/photo/include;C:/Users/Andrey/Documents/opencv/opencv/modules/stitching/include;C:/Users/Andrey/Documents/opencv/opencv/modules/ts/include;C:/Users/Andrey/Documents/opencv/opencv/modules/video/include;C:/Users/Andrey/Documents/opencv/opencv/modules/videostab/include;C:/Users/Andrey/Documents/opencv/opencv/modules/world/include;C:/Users/Andrey/Documents/Visual Studio 2010/Projects/EyeDetectIsophoto;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:/Users/Andrey/Documents/Visual Studio 2010/Projects/OpenCV_sln;C:/Users/Andrey/Documents/opencv/opencv/include;C:/Users/Andrey/Documents/opencv/opencv/include/opencv;C:/Users/Andrey/Documents/opencv/opencv/modules/calib3d/include;C:/Users/Andrey/Documents/opencv/opencv/modules/contrib/include;C:/Users/Andrey/Documents/opencv/opencv/modules/core/include;C:/Users/Andrey/Documents/opencv/opencv/modules/features2d/include;C:/Users/Andrey/Documents/opencv/opencv/modules/flann/include;C:/Users/Andrey/Documents/opencv/opencv/modules/gpu/include;C:/Users/Andrey/Documents/opencv/opencv/modules/highgui/include;C:/Users/Andrey/Documents/opencv/opencv/modules/imgproc/include;C:/Users/Andrey/Documents/opencv/opencv/modules/legacy/include;C:/Users/Andrey/Documents/opencv/opencv/modules/ml/include;C:/Users/Andrey/Documents/opencv/opencv/modules/nonfree/include;C:/Users/Andrey/Documents/opencv/opencv/modules/objdetect/include;C:/Users/Andrey/Documents/opencv/opencv/modules/photo/include;C:/Users/Andrey/Documents/opencv/opencv/modules/stitching/include;C:/Users/Andrey/Documents/opencv/opencv/modules/ts/include;C:/Users/Andrey/Documents/opencv/opencv/modules/video/include;C:/Users/Andrey/Documents/opencv/opencv/modules/videostab/include;C:/Users/Andrey/Documents/opencv/opencv/modules/world/include;C:/Users/Andrey/Documents/Visual Studio 2010/Projects/EyeDetectIsophoto;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Release\opencv_calib3d240.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Release\opencv_contrib240.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Release\opencv_core240.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Release\opencv_features2d240.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Release\opencv_flann240.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Release\opencv_gpu240.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Release\opencv_highgui240.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Release\opencv_imgproc240.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Release\opencv_legacy240.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Release\opencv_ml240.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Release\opencv_nonfree240.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Release\opencv_objdetect240.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Release\opencv_photo240.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Release\opencv_stitching240.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Release\opencv_ts240.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Release\opencv_video240.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Release\opencv_videostab240.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Release\opencv_world240.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>C:/Users/Andrey/Documents/Visual Studio 2010/Projects/EyeDetectIsophoto/vs2010/MinSizeRel/your_project.lib</ImportLibrary>
+      <ProgramDataBaseFileName>C:/Users/Andrey/Documents/Visual Studio 2010/Projects/EyeDetectIsophoto/vs2010/MinSizeRel/your_project.pdb</ProgramDataBaseFileName>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:/Users/Andrey/Documents/Visual Studio 2010/Projects/OpenCV_sln;C:/Users/Andrey/Documents/opencv/opencv/include;C:/Users/Andrey/Documents/opencv/opencv/include/opencv;C:/Users/Andrey/Documents/opencv/opencv/modules/calib3d/include;C:/Users/Andrey/Documents/opencv/opencv/modules/contrib/include;C:/Users/Andrey/Documents/opencv/opencv/modules/core/include;C:/Users/Andrey/Documents/opencv/opencv/modules/features2d/include;C:/Users/Andrey/Documents/opencv/opencv/modules/flann/include;C:/Users/Andrey/Documents/opencv/opencv/modules/gpu/include;C:/Users/Andrey/Documents/opencv/opencv/modules/highgui/include;C:/Users/Andrey/Documents/opencv/opencv/modules/imgproc/include;C:/Users/Andrey/Documents/opencv/opencv/modules/legacy/include;C:/Users/Andrey/Documents/opencv/opencv/modules/ml/include;C:/Users/Andrey/Documents/opencv/opencv/modules/nonfree/include;C:/Users/Andrey/Documents/opencv/opencv/modules/objdetect/include;C:/Users/Andrey/Documents/opencv/opencv/modules/photo/include;C:/Users/Andrey/Documents/opencv/opencv/modules/stitching/include;C:/Users/Andrey/Documents/opencv/opencv/modules/ts/include;C:/Users/Andrey/Documents/opencv/opencv/modules/video/include;C:/Users/Andrey/Documents/opencv/opencv/modules/videostab/include;C:/Users/Andrey/Documents/opencv/opencv/modules/world/include;C:/Users/Andrey/Documents/Visual Studio 2010/Projects/EyeDetectIsophoto;$(CudaToolkitIncludeDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>RelWithDebInfo</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>C:/Users/Andrey/Documents/Visual Studio 2010/Projects/EyeDetectIsophoto/vs2010/RelWithDebInfo/your_project.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:/Users/Andrey/Documents/Visual Studio 2010/Projects/OpenCV_sln;C:/Users/Andrey/Documents/opencv/opencv/include;C:/Users/Andrey/Documents/opencv/opencv/include/opencv;C:/Users/Andrey/Documents/opencv/opencv/modules/calib3d/include;C:/Users/Andrey/Documents/opencv/opencv/modules/contrib/include;C:/Users/Andrey/Documents/opencv/opencv/modules/core/include;C:/Users/Andrey/Documents/opencv/opencv/modules/features2d/include;C:/Users/Andrey/Documents/opencv/opencv/modules/flann/include;C:/Users/Andrey/Documents/opencv/opencv/modules/gpu/include;C:/Users/Andrey/Documents/opencv/opencv/modules/highgui/include;C:/Users/Andrey/Documents/opencv/opencv/modules/imgproc/include;C:/Users/Andrey/Documents/opencv/opencv/modules/legacy/include;C:/Users/Andrey/Documents/opencv/opencv/modules/ml/include;C:/Users/Andrey/Documents/opencv/opencv/modules/nonfree/include;C:/Users/Andrey/Documents/opencv/opencv/modules/objdetect/include;C:/Users/Andrey/Documents/opencv/opencv/modules/photo/include;C:/Users/Andrey/Documents/opencv/opencv/modules/stitching/include;C:/Users/Andrey/Documents/opencv/opencv/modules/ts/include;C:/Users/Andrey/Documents/opencv/opencv/modules/video/include;C:/Users/Andrey/Documents/opencv/opencv/modules/videostab/include;C:/Users/Andrey/Documents/opencv/opencv/modules/world/include;C:/Users/Andrey/Documents/Visual Studio 2010/Projects/EyeDetectIsophoto;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:/Users/Andrey/Documents/Visual Studio 2010/Projects/OpenCV_sln;C:/Users/Andrey/Documents/opencv/opencv/include;C:/Users/Andrey/Documents/opencv/opencv/include/opencv;C:/Users/Andrey/Documents/opencv/opencv/modules/calib3d/include;C:/Users/Andrey/Documents/opencv/opencv/modules/contrib/include;C:/Users/Andrey/Documents/opencv/opencv/modules/core/include;C:/Users/Andrey/Documents/opencv/opencv/modules/features2d/include;C:/Users/Andrey/Documents/opencv/opencv/modules/flann/include;C:/Users/Andrey/Documents/opencv/opencv/modules/gpu/include;C:/Users/Andrey/Documents/opencv/opencv/modules/highgui/include;C:/Users/Andrey/Documents/opencv/opencv/modules/imgproc/include;C:/Users/Andrey/Documents/opencv/opencv/modules/legacy/include;C:/Users/Andrey/Documents/opencv/opencv/modules/ml/include;C:/Users/Andrey/Documents/opencv/opencv/modules/nonfree/include;C:/Users/Andrey/Documents/opencv/opencv/modules/objdetect/include;C:/Users/Andrey/Documents/opencv/opencv/modules/photo/include;C:/Users/Andrey/Documents/opencv/opencv/modules/stitching/include;C:/Users/Andrey/Documents/opencv/opencv/modules/ts/include;C:/Users/Andrey/Documents/opencv/opencv/modules/video/include;C:/Users/Andrey/Documents/opencv/opencv/modules/videostab/include;C:/Users/Andrey/Documents/opencv/opencv/modules/world/include;C:/Users/Andrey/Documents/Visual Studio 2010/Projects/EyeDetectIsophoto;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Release\opencv_calib3d240.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Release\opencv_contrib240.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Release\opencv_core240.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Release\opencv_features2d240.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Release\opencv_flann240.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Release\opencv_gpu240.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Release\opencv_highgui240.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Release\opencv_imgproc240.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Release\opencv_legacy240.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Release\opencv_ml240.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Release\opencv_nonfree240.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Release\opencv_objdetect240.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Release\opencv_photo240.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Release\opencv_stitching240.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Release\opencv_ts240.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Release\opencv_video240.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Release\opencv_videostab240.lib;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\lib\Release\opencv_world240.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>C:/Users/Andrey/Documents/Visual Studio 2010/Projects/EyeDetectIsophoto/vs2010/RelWithDebInfo/your_project.lib</ImportLibrary>
+      <LinkIncremental>true</LinkIncremental>
+      <ProgramDataBaseFileName>C:/Users/Andrey/Documents/Visual Studio 2010/Projects/EyeDetectIsophoto/vs2010/RelWithDebInfo/your_project.pdb</ProgramDataBaseFileName>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/Andrey/Documents/Visual Studio 2010/Projects/EyeDetectIsophoto/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake 2.8\bin\cmake.exe" "-HC:/Users/Andrey/Documents/Visual Studio 2010/Projects/EyeDetectIsophoto" "-BC:/Users/Andrey/Documents/Visual Studio 2010/Projects/EyeDetectIsophoto/vs2010" --check-stamp-file "C:\Users\Andrey\Documents\Visual Studio 2010\Projects\EyeDetectIsophoto\vs2010\CMakeFiles\generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/Andrey/Documents/Visual Studio 2010/Projects/EyeDetectIsophoto/CMakeLists.txt;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\EyeDetectIsophoto\CMakeLists.txt;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\EyeDetectIsophoto\vs2010\CMakeFiles\CMakeSystem.cmake;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\EyeDetectIsophoto\vs2010\CMakeFiles\CMakeCCompiler.cmake;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\EyeDetectIsophoto\vs2010\CMakeFiles\CMakeCXXCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-cl.cmake;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\EyeDetectIsophoto\vs2010\CMakeFiles\CMakeCPlatform.cmake;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\EyeDetectIsophoto\vs2010\CMakeFiles\CMakeCXXPlatform.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\cl.cmake;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\EyeDetectIsophoto\vs2010\CMakeFiles\CMakeRCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-cl.cmake;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\EyeDetectIsophoto\vs2010\CMakeFiles\CMakeCPlatform.cmake;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\EyeDetectIsophoto\vs2010\CMakeFiles\CMakeCXXPlatform.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\cl.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\OpenCVConfig-version.cmake;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\OpenCVConfig.cmake;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\EyeDetectIsophoto\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Andrey\Documents\Visual Studio 2010\Projects\EyeDetectIsophoto\vs2010\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/Andrey/Documents/Visual Studio 2010/Projects/EyeDetectIsophoto/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake 2.8\bin\cmake.exe" "-HC:/Users/Andrey/Documents/Visual Studio 2010/Projects/EyeDetectIsophoto" "-BC:/Users/Andrey/Documents/Visual Studio 2010/Projects/EyeDetectIsophoto/vs2010" --check-stamp-file "C:\Users\Andrey\Documents\Visual Studio 2010\Projects\EyeDetectIsophoto\vs2010\CMakeFiles\generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/Andrey/Documents/Visual Studio 2010/Projects/EyeDetectIsophoto/CMakeLists.txt;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\EyeDetectIsophoto\CMakeLists.txt;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\EyeDetectIsophoto\vs2010\CMakeFiles\CMakeSystem.cmake;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\EyeDetectIsophoto\vs2010\CMakeFiles\CMakeCCompiler.cmake;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\EyeDetectIsophoto\vs2010\CMakeFiles\CMakeCXXCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-cl.cmake;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\EyeDetectIsophoto\vs2010\CMakeFiles\CMakeCPlatform.cmake;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\EyeDetectIsophoto\vs2010\CMakeFiles\CMakeCXXPlatform.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\cl.cmake;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\EyeDetectIsophoto\vs2010\CMakeFiles\CMakeRCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-cl.cmake;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\EyeDetectIsophoto\vs2010\CMakeFiles\CMakeCPlatform.cmake;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\EyeDetectIsophoto\vs2010\CMakeFiles\CMakeCXXPlatform.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\cl.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\OpenCVConfig-version.cmake;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\OpenCVConfig.cmake;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\EyeDetectIsophoto\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Andrey\Documents\Visual Studio 2010\Projects\EyeDetectIsophoto\vs2010\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/Andrey/Documents/Visual Studio 2010/Projects/EyeDetectIsophoto/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake 2.8\bin\cmake.exe" "-HC:/Users/Andrey/Documents/Visual Studio 2010/Projects/EyeDetectIsophoto" "-BC:/Users/Andrey/Documents/Visual Studio 2010/Projects/EyeDetectIsophoto/vs2010" --check-stamp-file "C:\Users\Andrey\Documents\Visual Studio 2010\Projects\EyeDetectIsophoto\vs2010\CMakeFiles\generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/Andrey/Documents/Visual Studio 2010/Projects/EyeDetectIsophoto/CMakeLists.txt;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\EyeDetectIsophoto\CMakeLists.txt;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\EyeDetectIsophoto\vs2010\CMakeFiles\CMakeSystem.cmake;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\EyeDetectIsophoto\vs2010\CMakeFiles\CMakeCCompiler.cmake;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\EyeDetectIsophoto\vs2010\CMakeFiles\CMakeCXXCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-cl.cmake;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\EyeDetectIsophoto\vs2010\CMakeFiles\CMakeCPlatform.cmake;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\EyeDetectIsophoto\vs2010\CMakeFiles\CMakeCXXPlatform.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\cl.cmake;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\EyeDetectIsophoto\vs2010\CMakeFiles\CMakeRCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-cl.cmake;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\EyeDetectIsophoto\vs2010\CMakeFiles\CMakeCPlatform.cmake;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\EyeDetectIsophoto\vs2010\CMakeFiles\CMakeCXXPlatform.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\cl.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\OpenCVConfig-version.cmake;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\OpenCVConfig.cmake;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\EyeDetectIsophoto\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\Andrey\Documents\Visual Studio 2010\Projects\EyeDetectIsophoto\vs2010\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/Andrey/Documents/Visual Studio 2010/Projects/EyeDetectIsophoto/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake 2.8\bin\cmake.exe" "-HC:/Users/Andrey/Documents/Visual Studio 2010/Projects/EyeDetectIsophoto" "-BC:/Users/Andrey/Documents/Visual Studio 2010/Projects/EyeDetectIsophoto/vs2010" --check-stamp-file "C:\Users\Andrey\Documents\Visual Studio 2010\Projects\EyeDetectIsophoto\vs2010\CMakeFiles\generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/Andrey/Documents/Visual Studio 2010/Projects/EyeDetectIsophoto/CMakeLists.txt;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\EyeDetectIsophoto\CMakeLists.txt;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\EyeDetectIsophoto\vs2010\CMakeFiles\CMakeSystem.cmake;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\EyeDetectIsophoto\vs2010\CMakeFiles\CMakeCCompiler.cmake;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\EyeDetectIsophoto\vs2010\CMakeFiles\CMakeCXXCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-cl.cmake;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\EyeDetectIsophoto\vs2010\CMakeFiles\CMakeCPlatform.cmake;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\EyeDetectIsophoto\vs2010\CMakeFiles\CMakeCXXPlatform.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\cl.cmake;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\EyeDetectIsophoto\vs2010\CMakeFiles\CMakeRCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-cl.cmake;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\EyeDetectIsophoto\vs2010\CMakeFiles\CMakeCPlatform.cmake;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\EyeDetectIsophoto\vs2010\CMakeFiles\CMakeCXXPlatform.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\cl.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\OpenCVConfig-version.cmake;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\OpenCV_sln\OpenCVConfig.cmake;C:\Users\Andrey\Documents\Visual Studio 2010\Projects\EyeDetectIsophoto\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\Andrey\Documents\Visual Studio 2010\Projects\EyeDetectIsophoto\vs2010\CMakeFiles\generate.stamp</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Andrey\Documents\Visual Studio 2010\Projects\EyeDetectIsophoto\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/Users/Andrey/Documents/Visual Studio 2010/Projects/EyeDetectIsophoto/vs2010/ZERO_CHECK.vcxproj">
+      <Project>348E5C9B-FDF4-47DB-9183-7BEA12D23BDD</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="..\kernel.cu" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 4.2.targets" />
+  </ImportGroup>
+</Project>

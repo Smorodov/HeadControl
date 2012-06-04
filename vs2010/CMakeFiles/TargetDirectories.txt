@@ -1,0 +1,3 @@
+C:/Users/Andrey/Documents/Visual Studio 2010/Projects/EyeDetectIsophoto/vs2010/CMakeFiles/ALL_BUILD.dir
+C:/Users/Andrey/Documents/Visual Studio 2010/Projects/EyeDetectIsophoto/vs2010/CMakeFiles/ZERO_CHECK.dir
+C:/Users/Andrey/Documents/Visual Studio 2010/Projects/EyeDetectIsophoto/vs2010/CMakeFiles/your_project.dir

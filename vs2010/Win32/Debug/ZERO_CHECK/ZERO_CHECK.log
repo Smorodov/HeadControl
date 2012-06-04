@@ -1,0 +1,12 @@
+﻿Построение начато 31.05.2012 6:26:33.
+     1>Проект "C:\Users\Andrey\Documents\Visual Studio 2010\Projects\EyeDetectIsophoto\vs2010\ZERO_CHECK.vcxproj" в узле 2 (целевые объекты build).
+     1>InitializeBuildStatus:
+         Создание "Win32\Debug\ZERO_CHECK\ZERO_CHECK.unsuccessfulbuild", так как было задано "AlwaysCreate".
+       FinalizeBuildStatus:
+         Файл "Win32\Debug\ZERO_CHECK\ZERO_CHECK.unsuccessfulbuild" удаляется.
+         Обращение к "Win32\Debug\ZERO_CHECK\ZERO_CHECK.lastbuildstate".
+     1>Построение проекта "C:\Users\Andrey\Documents\Visual Studio 2010\Projects\EyeDetectIsophoto\vs2010\ZERO_CHECK.vcxproj" завершено (целевые объекты build).
+
+Построение успешно завершено.
+
+Затраченное время: 00:00:00.49

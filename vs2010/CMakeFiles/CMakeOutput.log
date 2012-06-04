@@ -1,0 +1,123 @@
+The system is: Windows - 6.1 - x86
+Determining if the C compiler works passed with the following output:
+Change Dir: C:/Users/Andrey/Documents/Visual Studio 2010/Projects/EyeDetectIsophoto/vs2010/CMakeFiles/CMakeTmp
+
+Run Build Command:c:\PROGRA~1\MICROS~2.0\Common7\IDE\devenv.com CMAKE_TRY_COMPILE.sln /build Debug /project cmTryCompileExec
+
+Microsoft (R) Visual Studio ┬хЁёш  10.0.30319.1.
+(C) ╩юЁяюЁрЎш  ╠рщъЁюёюЇЄ (Microsoft Corp.). ┬ёх яЁртр чр∙ш∙хэ√.
+1>------ Построение начато: проект: cmTryCompileExec, Конфигурация: Debug Win32 ------
+1>Построение начато 31.05.2012 2:01:48.
+1>PrepareForBuild:
+1>  Создание каталога "C:\Users\Andrey\Documents\Visual Studio 2010\Projects\EyeDetectIsophoto\vs2010\CMakeFiles\CMakeTmp\Debug\".
+1>InitializeBuildStatus:
+1>  Создание "cmTryCompileExec.dir\Debug\cmTryCompileExec.unsuccessfulbuild", так как было задано "AlwaysCreate".
+1>ClCompile:
+1>  Оптимизирующий 32-разрядный компилятор Microsoft (R) C/C++ версии 16.00.30319.01 для 80x86
+1>  (C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+1>  
+1>  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec.dir\Debug\\" /Fd"C:/Users/Andrey/Documents/Visual Studio 2010/Projects/EyeDetectIsophoto/vs2010/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec.pdb" /Gd /TC /analyze- /errorReport:prompt "C:\Users\Andrey\Documents\Visual Studio 2010\Projects\EyeDetectIsophoto\vs2010\CMakeFiles\CMakeTmp\testCCompiler.c"  /Zm1000 
+1>  
+1>  testCCompiler.c
+1>LinkEmbedManifest:
+1>  cmTryCompileExec.vcxproj -> C:\Users\Andrey\Documents\Visual Studio 2010\Projects\EyeDetectIsophoto\vs2010\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec.exe
+1>FinalizeBuildStatus:
+1>  Файл "cmTryCompileExec.dir\Debug\cmTryCompileExec.unsuccessfulbuild" удаляется.
+1>  Обращение к "cmTryCompileExec.dir\Debug\cmTryCompileExec.lastbuildstate".
+1>
+1>Построение успешно завершено.
+1>
+1>Затраченное время: 00:00:11.15
+========== Построение: успешно: 1, с ошибками: 0, без изменений: 0, пропущено: 0 ==========
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: C:/Users/Andrey/Documents/Visual Studio 2010/Projects/EyeDetectIsophoto/vs2010/CMakeFiles/CMakeTmp
+
+Run Build Command:c:\PROGRA~1\MICROS~2.0\Common7\IDE\devenv.com CMAKE_TRY_COMPILE.sln /build Debug /project cmTryCompileExec
+
+Microsoft (R) Visual Studio ┬хЁёш  10.0.30319.1.
+(C) ╩юЁяюЁрЎш  ╠рщъЁюёюЇЄ (Microsoft Corp.). ┬ёх яЁртр чр∙ш∙хэ√.
+1>------ Построение начато: проект: cmTryCompileExec, Конфигурация: Debug Win32 ------
+1>Построение начато 31.05.2012 2:02:09.
+1>InitializeBuildStatus:
+1>  Создание "cmTryCompileExec.dir\Debug\cmTryCompileExec.unsuccessfulbuild", так как было задано "AlwaysCreate".
+1>ClCompile:
+1>  Оптимизирующий 32-разрядный компилятор Microsoft (R) C/C++ версии 16.00.30319.01 для 80x86
+1>  (C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+1>  
+1>  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec.dir\Debug\\" /Fd"C:/Users/Andrey/Documents/Visual Studio 2010/Projects/EyeDetectIsophoto/vs2010/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec.pdb" /Gd /TC /analyze- /errorReport:prompt "C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompilerABI.c"  /Zm1000 
+1>  
+1>  CMakeCCompilerABI.c
+1>LinkEmbedManifest:
+1>  cmTryCompileExec.vcxproj -> C:\Users\Andrey\Documents\Visual Studio 2010\Projects\EyeDetectIsophoto\vs2010\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec.exe
+1>FinalizeBuildStatus:
+1>  Файл "cmTryCompileExec.dir\Debug\cmTryCompileExec.unsuccessfulbuild" удаляется.
+1>  Обращение к "cmTryCompileExec.dir\Debug\cmTryCompileExec.lastbuildstate".
+1>
+1>Построение успешно завершено.
+1>
+1>Затраченное время: 00:00:03.07
+========== Построение: успешно: 1, с ошибками: 0, без изменений: 0, пропущено: 0 ==========
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: C:/Users/Andrey/Documents/Visual Studio 2010/Projects/EyeDetectIsophoto/vs2010/CMakeFiles/CMakeTmp
+
+Run Build Command:c:\PROGRA~1\MICROS~2.0\Common7\IDE\devenv.com CMAKE_TRY_COMPILE.sln /build Debug /project cmTryCompileExec
+
+Microsoft (R) Visual Studio ┬хЁёш  10.0.30319.1.
+(C) ╩юЁяюЁрЎш  ╠рщъЁюёюЇЄ (Microsoft Corp.). ┬ёх яЁртр чр∙ш∙хэ√.
+1>------ Построение начато: проект: cmTryCompileExec, Конфигурация: Debug Win32 ------
+1>Построение начато 31.05.2012 2:02:14.
+1>InitializeBuildStatus:
+1>  Создание "cmTryCompileExec.dir\Debug\cmTryCompileExec.unsuccessfulbuild", так как было задано "AlwaysCreate".
+1>ClCompile:
+1>  Оптимизирующий 32-разрядный компилятор Microsoft (R) C/C++ версии 16.00.30319.01 для 80x86
+1>  (C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+1>  
+1>  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec.dir\Debug\\" /Fd"C:/Users/Andrey/Documents/Visual Studio 2010/Projects/EyeDetectIsophoto/vs2010/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec.pdb" /Gd /TP /analyze- /errorReport:prompt "C:\Users\Andrey\Documents\Visual Studio 2010\Projects\EyeDetectIsophoto\vs2010\CMakeFiles\CMakeTmp\testCXXCompiler.cxx"  /Zm1000 
+1>  
+1>  testCXXCompiler.cxx
+1>LinkEmbedManifest:
+1>  cmTryCompileExec.vcxproj -> C:\Users\Andrey\Documents\Visual Studio 2010\Projects\EyeDetectIsophoto\vs2010\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec.exe
+1>FinalizeBuildStatus:
+1>  Файл "cmTryCompileExec.dir\Debug\cmTryCompileExec.unsuccessfulbuild" удаляется.
+1>  Обращение к "cmTryCompileExec.dir\Debug\cmTryCompileExec.lastbuildstate".
+1>
+1>Построение успешно завершено.
+1>
+1>Затраченное время: 00:00:02.31
+========== Построение: успешно: 1, с ошибками: 0, без изменений: 0, пропущено: 0 ==========
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: C:/Users/Andrey/Documents/Visual Studio 2010/Projects/EyeDetectIsophoto/vs2010/CMakeFiles/CMakeTmp
+
+Run Build Command:c:\PROGRA~1\MICROS~2.0\Common7\IDE\devenv.com CMAKE_TRY_COMPILE.sln /build Debug /project cmTryCompileExec
+
+Microsoft (R) Visual Studio ┬хЁёш  10.0.30319.1.
+(C) ╩юЁяюЁрЎш  ╠рщъЁюёюЇЄ (Microsoft Corp.). ┬ёх яЁртр чр∙ш∙хэ√.
+1>------ Построение начато: проект: cmTryCompileExec, Конфигурация: Debug Win32 ------
+1>Построение начато 31.05.2012 2:02:19.
+1>InitializeBuildStatus:
+1>  Создание "cmTryCompileExec.dir\Debug\cmTryCompileExec.unsuccessfulbuild", так как было задано "AlwaysCreate".
+1>ClCompile:
+1>  Оптимизирующий 32-разрядный компилятор Microsoft (R) C/C++ версии 16.00.30319.01 для 80x86
+1>  (C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+1>  
+1>  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec.dir\Debug\\" /Fd"C:/Users/Andrey/Documents/Visual Studio 2010/Projects/EyeDetectIsophoto/vs2010/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec.pdb" /Gd /TP /analyze- /errorReport:prompt "C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompilerABI.cpp"  /Zm1000 
+1>  
+1>  CMakeCXXCompilerABI.cpp
+1>LinkEmbedManifest:
+1>  cmTryCompileExec.vcxproj -> C:\Users\Andrey\Documents\Visual Studio 2010\Projects\EyeDetectIsophoto\vs2010\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec.exe
+1>FinalizeBuildStatus:
+1>  Файл "cmTryCompileExec.dir\Debug\cmTryCompileExec.unsuccessfulbuild" удаляется.
+1>  Обращение к "cmTryCompileExec.dir\Debug\cmTryCompileExec.lastbuildstate".
+1>
+1>Построение успешно завершено.
+1>
+1>Затраченное время: 00:00:02.17
+========== Построение: успешно: 1, с ошибками: 0, без изменений: 0, пропущено: 0 ==========
+
+
