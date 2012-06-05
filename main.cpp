@@ -77,6 +77,12 @@ void DetectContour(Mat& img, Mat& image,Mat& Rad)
 	cv::normalize(img,img,0,255,CV_MINMAX);
 	img.convertTo(img8U,CV_8UC1);
 
+	//Mat rect_12 = getStructuringElement(CV_SHAPE_RECT, Size(12,12) , Point(6,6));
+	//erode(img8U, img8U, rect_12,Point(),1);
+	//Mat rect_6 = getStructuringElement(CV_SHAPE_RECT, Size(6,6) , Point(3,3));
+	//dilate(img8U,img8U,rect_6,Point(),2);
+
+
 	vector<vector<Point> > contours;
 	
 	vector<Vec4i> hierarchy;
@@ -87,16 +93,20 @@ void DetectContour(Mat& img, Mat& image,Mat& Rad)
 	{
 		for( int i = 0; i < contours.size(); i++ )
 		{
-			if(contourArea(contours[i])>20)
+			if(contourArea(contours[i])>200)
 			{				
 				//drawContours( drawing, contours, i, Scalar(0,255,0), 1, 8, vector<Vec4i>(), 0, Point() );
 				Rect r=cv::boundingRect(contours[i]);
-				cv::rectangle(drawing,r,Scalar(0,255,0));
+				//cv::rectangle(drawing,r,Scalar(0,255,0));
 				double m,M;
 				Point P;
-				minMaxLoc(img(Rect(r)),&m,&M,0,&P);
-				P.x=P.x+r.x;
-				P.y=P.y+r.y;
+				//minMaxLoc(img(Rect(r)),&m,&M,0,&P);
+
+				Moments mm;				
+				mm=moments(img(Rect(r)));
+
+				P.x=(mm.m10/mm.m00)+r.x;
+				P.y=(mm.m01/mm.m00)+r.y;
 				cv::circle(drawing,P,3,Scalar(0,255,0),1);
 			}
 		}
@@ -253,7 +263,7 @@ void IsofoteCurvatureDetector(Mat& img,Mat &Accumulator, Mat& Rad)
 	// Размажем
 	cv::GaussianBlur(Accumulator,Accumulator,Size(gauss_kernel_size,gauss_kernel_size),sigma);
 	cv::minMaxLoc(Accumulator,&m,&M);
-	cv::threshold(Accumulator,Accumulator,M-(M-m)*0.2,1,CV_THRESH_TOZERO);
+	cv::threshold(Accumulator,Accumulator,M-(M-m)*0.15,1,CV_THRESH_TOZERO);
 
 	// Вроде должно само освобождаться, но надо уточнить
 	/*
@@ -288,6 +298,8 @@ int main(int argc, char * argv[])
 	Mat img(frame.size(),CV_8UC1);
 	Mat img_prev(frame.size(),CV_8UC1);
 	Mat Rad(img.rows,img.cols,CV_32FC1);
+	Mat Res_full_acc(img.rows,img.cols,CV_32FC1);
+	Res_full_acc=0;
 	if (capture.isOpened())
 	{
 		while(true)
@@ -296,7 +308,7 @@ int main(int argc, char * argv[])
 			cvtColor(frame,img,CV_BGR2GRAY);
 			Mat Res;
 			Mat Res_full(img.rows,img.cols,CV_32FC1);
-
+			
 			vector<Rect> rects;
 			rects=detect_faces(img);
 			Res_full=0;
@@ -310,9 +322,10 @@ int main(int argc, char * argv[])
 			Res.copyTo(Res_full(Rect(rects[0])));
 			}
 			cv::normalize(Res_full,Res_full,0,1,CV_MINMAX);
-			imshow("Res",Res_full);
-
-			DetectContour(Res_full, img,Rad);
+			
+			cv::accumulateWeighted(Res_full,Res_full_acc,0.995);
+			imshow("Res",Res_full_acc);
+			DetectContour(Res_full_acc, img,Rad);
 			
 			int c = waitKey(10);
 			if( (char)c == 27 ) 
